@@ -1,0 +1,58 @@
+/* ベーススタイル */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f7f7f7;
+}
+header {
+    background-color: #f15da9;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+h2 {
+    color: #007acc;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+/* レスポンシブレイアウト */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.flex-item {
+    flex: 1;
+    min-width: 300px;
+    max-width: 45%;
+    box-sizing: border-box;
+}
+/* メディアクエリ */
+@media (max-width: 768px) {
+    .flex-item {
+        min-width: 100%;
+    }
+}
+/* リンク */
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
